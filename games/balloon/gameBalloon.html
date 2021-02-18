@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../../fontawesome/css/all.css"> 
+    </head>
+    <body>
+        <div id="container" role="container" style="height: 100vh; font-family: Montserrat; display: flex; flex-direction: column; justify-content: center; width: 100%">
+            <div id="text" role="guidelineAndQuestion" style="top: 0; display: flex; justify-content: center; align-items: flex-start; position: absolute; height: 20%; width: 100%; background-color: #E2E2E2; padding-top: 20px;">
+                <a href="./intro.html" role="back button" style="position: absolute; left: 3%; margin-top: 10px; text-decoration: none;color: white">
+                    <img id="leftSlide" style="z-index: 1; width: 40%; " src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+                </a>
+                <div id="text-wrapper" role="textWrapper" style="width: 70%">
+                    <p role="keyboardGuideline">Use LEFT and RIGHT key arrows to move and SPACE BAR to jump on the balloon that you think is the correct answer:</p>
+                    <p style="font-weight: bold; font-size: 22px; line-height: 1.5;" role="question">How many do you think are planning to leave when they do perceive bias in the workplace?</p>
+                    <i role="speakerIcon" class="fas fa-volume-up" style="font-size: 20px; cursor: pointer; margin-bottom: 10px" onclick="speakVO()"></i>
+                </div>
+            </div>
+            <div id="ground" role="ground" style="display: flex; flex-direction: column; align-items: center; height: 80%">
+                <div id="balloons" role="balloons" style="display: flex; justify-content: space-between;">
+                    <div id="red" role="redBalloon" style="position: absolute; display: flex; justify-content: center; align-items: center; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613074397/Group_33_ykzt4r.png); background-size: 100% 80%; background-position: center; background-repeat: no-repeat">
+                        <p role="textInBalloon" style="margin-top: -100px; text-align: center; color: white; width: 90%; font-size: 24px; font-weight: bold;">1 out of 10</p>
+                    </div>
+                    <div id="blue" role="blueBalloon" style="position: absolute; display: flex; justify-content: center; align-items: center; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613074399/Group_34_ong0lb.png); background-size: 100% 80%; background-position: center; background-repeat: no-repeat">
+                        <p role="textInBalloon" style="margin-top: -100px; text-align: center; color: white; width: 90%; font-size: 24px; font-weight: bold;">3 out of 10</p>
+                    </div>
+                    <div id="purple" role="purpleBalloon" style="position: absolute; display: flex; justify-content: center; align-items: center; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613074401/Group_35_uowx7d.png); background-size: 100% 80%; background-position: center; background-repeat: no-repeat">
+                        <p role="textInBalloon" style="margin-top: -100px; text-align: center; color: white; width: 90%; font-size: 24px; font-weight: bold;">5 out of 10</p>
+                    </div>
+                </div>
+                <div id="cloud" role="cloud" style="width: 100%; display: none">
+                    <img style="position: absolute; top: 20%; left: 0; z-index: 1" alt="left cloud image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613158607/cloud1_cropped_sphzbk.png"/>
+                    <img style="position: absolute; top: 2%; left: 70%; z-index: 1" alt="right cloud image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613158610/cloud1_yttgce.png"/>
+                </div>
+                <div id="player" role="character" style="width: 100%; z-index: 1; ">
+                    <img style=" position: absolute; " id="playerImg" alt="Yang image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1611950517/Yang_LeftSide_2x_qc1sg5.png"  />
+                </div>
+                <div id="land" role="land" style="top: 80%; position: absolute; width: 100%; ">
+                    <img style="width: 100%" role="land image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613073890/Group_42_py2g0q.png"/>
+                </div>
+                <div id="sky-landing" role="skyLanding" style="width: 100%; display: none ">
+                    <img id="skyLandingImg" role="sky landing image" style="position: absolute; top: 90%; left: 30%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613159511/sky_landing_fxpso1.png"/>
+                </div>
+                <div id="summary" role="summaryAboutBias" style="width: 80%; height: 90vh;  z-index: 2; border: 1px solid silver; background-color: white; display: none">
+                    <div id="summary-wrapper" role="summaryWrapper" style="width: 60%;  position: absolute; left: 20%; top: 40%;   ">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start; font-size: 22px; ">
+                            <p role="text">When bias is perceived in the workplace, 3 in ten people say they plan to leave their current job.</p>
+                            <p role="text">And the same number —roughly 3 in 10 – report withholding ideas and market solutions.</p>
+                            <a href="../../index.html" role="homeButton" style="text-decoration: none;color: white">
+                                <button style="border-radius: 20px; cursor: pointer; border: none; background-color: #111F47; color: white; padding: 10px 30px; text-align: center; font-size: 16px; ">
+                                    Home
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./gameBalloon.js"></script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="office-container" role="container" style="font-family: Montserrat; display: flex; justify-content: center; height: 100vh; align-items: center">
+            <a href="../../intro/yangIntro.html" role="backButton" style="position: absolute; left: 1%; top: 1%; text-decoration: none;color: white;  ">
+                <!-- <button style="border-radius: 20px; cursor: pointer; border: none; background-color: #111F47; color: white; padding: 10px 30px; text-align: center; font-size: 16px; ">
+                    Back
+                </button> -->
+                <img id="leftSlide" style="z-index: 1;width: 40%; " src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <div id="wrapper" role="officeEnvironment" style="width: 100%; height: 100vh; z-index: 1">
+                <div id="office" role="office" style="position: absolute">
+                    <img alt="office image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613418427/perspectives_officeenvironment_1_oql2yf.png" />
+                </div>
+                <div id="cupboard-left" role="cupboardLeft" style="position: absolute;">
+                    <img alt="cupboard image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315396/perspectives_backdrawers_xhrp3w.svg" />
+                </div>
+                <div id="cupboard-right" role="cupboardRight" style="position: absolute; ">
+                    <img alt="cupboard image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315422/perspectives_frontdrwaers_dcdc8q.svg" />
+                </div>
+                <div id="table-left" role="tableLeft" style="position: absolute; ">
+                    <img alt="table image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315399/perspectives_conferencetable_dwbt6w.svg" />
+                </div>
+                <div id="table-right-1" role="tableRight" style="position: absolute; display: flex">
+                    <img alt="table image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315418/perspectives_desk4_ktj66x.svg" />
+                </div>
+                <div id="table-right-2" role="tableRight" style="position: absolute; display: flex">
+                    <img alt="table image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315418/perspectives_desk4_ktj66x.svg" />
+                </div>
+                <div id="table-right-3" role="tableRight" style="position: absolute; display: flex">
+                    <img alt="table image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612315418/perspectives_desk4_ktj66x.svg" />
+                </div> 
+                <div id="message" role="text" style="position: absolute; top: 60px; left: 50px; font-size: 26px;">
+                    Welcome to Yang office :)
+                    <p role="direction" style="margin-top: 10px; font-size: 20px; max-width: 400px; color: #111F47">Use arrow keys to move around and enter sparkling area to go next</p>
+                </div>
+                <div id="guide" role="guide" style="position: absolute; top: 90px; left: 50px; font-size: 22px; font-weight: bold;">
+                    
+                </div>
+                <div id="sparkling" role="sparklingArea" style="position: absolute">
+                    <img alt="sparklingImage" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612541162/Group_26_u9dmag.svg"/>
+                </div>
+                <div id="player" role="player" style="position: absolute; display: flex; flex-direction: column; align-items: center;">
+                    <img id="hat" alt="hat image" style=" margin-left: 20px;" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612394697/capivara-blase-hat_1_gjqcfx.gif"/>
+                    <img id="playerImg" alt="Yang" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1611950509/Yang_Front_2x_j9ad21.png"  />
+                </div>
+                <div id="arrow-keys" role="arrowKeys">
+                    <div id="arrow-up" role="upArrow" style="position: absolute; padding: 8px; border: 1px solid grey; border-radius: 8px; left: 100px; top: 600px; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; background-color: #F1F2F3;">
+                        <img alt="up arrow icon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612571603/Path_85_zn0wip.png" style="width: 30px; height: 20px"/>
+                    </div>
+                    <div id="arrow-down"  role="downArrow" style="position: absolute; padding: 8px; border: 1px solid grey; border-radius: 8px; left: 100px; top: 670px; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; background-color: #F1F2F3;">
+                        <img alt="down arrow icon"  src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612571606/Path_86_chvl5o.png" style="width: 30px; height: 20px"/>
+                    </div>
+                    <div id="arrow-left" role="leftArrow" style="position: absolute; padding: 8px; border: 1px solid grey; border-radius: 8px; left: 30px; top: 670px; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; background-color: #F1F2F3;">
+                        <img alt="left arrow icon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612571608/Path_87_lqmwfu.png" style="width: 20px; height: 30px"/>
+                    </div>
+                    <div id="arrow-right" role="rightArrow" style="position: absolute; padding: 8px; border: 1px solid grey; border-radius: 8px; left: 170px; top: 670px; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; background-color: #F1F2F3;"> 
+                        <img alt="right arrow icon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1612571610/Path_88_pxt6yx.png" style="width: 20px; height: 30px"/>
+                    </div>
+                </div>
+                <!-- <div id="edge-left">
+                    <div id="L-topleft" style="position: absolute; left: 250px; top: 570px">x</div>
+                    <div id="L-topright" style="position: absolute; left: 900px; top: 950px">x</div>
+                    <div id="L-bottomright" style="position: absolute; left: 800px; top: 1100px">x</div>
+                    <div id="L-bottomleft" style="position: absolute; left: 150px; top: 720px">x</div>
+                </div>
+                <div id="edge-right">
+                    <div id="L-topright" style="position: absolute; left: 900px; top: 950px">x</div>
+                    <div id="L-topright" style="position: absolute; left: 1560px; top: 570px">x</div>
+                    <div id="L-topright" style="position: absolute; left: 1700px; top: 750px">x</div>
+                    <div id="L-topright" style="position: absolute; left: 1040px; top: 1130px">x</div>
+                </div>
+                <div id="wall-left">
+                    <div id="L-topleft" style="position: absolute; left: 250px; top: 580px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 160px; top: 410px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 840px; top: 40px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 910px; top: 205px">x</div>
+                </div>
+                <div id="wall-right">
+                    <div id="L-topleft" style="position: absolute; left: 920px; top: 210px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 1560px; top: 580px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 1620px; top: 390px">x</div>
+                    <div id="L-topleft" style="position: absolute; left: 980px; top: 20px">x</div>
+                </div> -->
+            </div>
+        </div>
+        <script src="./officeWithObjects.js"></script>
+    </body>

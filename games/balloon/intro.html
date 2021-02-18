@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../../fontawesome/css/all.css"> 
+    </head>
+    <body>
+        <div id="container" role="container" style="font-family: Montserrat; display: flex; justify-content: center; width: 100%; height: 100vh; align-items: center;">
+            <a role="backButton" href="../../scenario/scenario1/yangConversation.html" style="position: absolute; left: 3%; top: 5%; text-decoration: none;color: white">
+                <img id="leftSlide" style="z-index: 1; width: 40%; " src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <div role="introductionToBias" style="width: 70%; font-size: 26px; line-height: 2.0;">
+                <p role="text">
+                    There are many types of unconscious bias that negatively affect people— and all of them operate below the surface of our awareness to influence how we treat those around us. Yang’s coworkers may not have been purposefully excluding her from contributing to their team— but their actions, and Yang’s perception of their actions, have a cost.
+                    <i class="fas fa-volume-up" role="speakerIcon" style="font-size: 20px; margin-top: 20px; cursor: pointer;" onclick="speak()"></i>
+                </p>
+                <a role="moreDetailButton" href="gameBalloon.html">
+                    <button 
+                        style="padding: 8px 15px; border-radius: 8px; background-color: white; font-family: Helvetica Neue; font-size: 20px; cursor: pointer;"
+                    >
+                        More detail
+                    </button>
+                </a>
+            </div>
+        </div>
+        <script>
+            function speak(){
+                var audio = new Audio('../../asset/VOfiles/PerspectivesVO_biasoverview.wav');
+                audio.volume = 1;
+                audio.play()
+            }
+        </script>
+    </body>
+</html>

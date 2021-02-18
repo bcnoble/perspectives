@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../../fontawesome/css/all.css"> 
+    </head>
+    <body>
+        <div class="conversation-container" role="container" style="display: flex; font-family: Montserrat;" >
+            <a role="backButton" href="../../office/officeWithObjects/yangOfficeWithObjects.html" style="position: absolute; left: 3%; top: 5%; text-decoration: none;color: white">
+                <img id="leftSlide" style="z-index: 1; width: 40%; " src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <div 
+                class="office-setup" 
+                style="width: 100%; height: 100vh"
+                role="officeSetup"
+            >
+                <div  style="display: flex; align-items: center; justify-content: center; width: 100%; height: 60%; ">
+                    <div role="characters" style="background-color: #F1DBB4; width: 100%; background-size: 100% 100%; background-repeat: no-repeat; height: 100%;">
+                        <img id="table" role="table" style="z-index: 1; width: 50%; position: absolute; top: 39%; left: 15%" src="../../asset/Table.png" />
+                        <img id="Bob" role="Bob" style="width: 15%; position: absolute; left: 15%; top: 10%" src="../../asset/Bob_Seated_Talk/Bob_Seated_Talk_00000.png"/>
+                        <img id="Jerry" role="Jerry" style="width: 15%; position: absolute; left: 32%; top: 10%" src="../../asset/Jerry_Seated_Talk/Jerry_Seated_Talk_00000.png" />
+                        <img id="Sasha" role="Sasha" style="width: 15%; position: absolute; left: 49%; top: 10%" src="../../asset/Sasha_Seated_Talk/Sasha_Seated_Talk_00000.png" />
+                        <img id="Yang" style="width: 15%; position: absolute; left: 66%; top: 15%" src="../../asset/Yang_Seated_Talk/Yang_Seated_Talk_00000.png" />
+                    </div>
+                </div>
+                <div role="introductionContainer" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; min-height: 40%; background-color: #E2E2E2; ">
+                    <div id="intro" role="introduction" style="font-size: 20px; width: 60%">
+                        <p style="line-height: 1.8;" role="text">
+                            Yang joins a meeting about launching a new product. Jerry wants to move forward but Yang has gathered some data that goes against this decision. She wants 
+                            to voice her opinion to her team.
+                            <i class="fas fa-volume-up" role="speakerIcon" style="font-size: 20px; margin-left: 10px; cursor: pointer;" onclick="speakVO()"></i>
+                        </p>
+                        <p role="text">
+                            To see things from Yang's point of view
+                            <button onclick="getMessages()" style="background-color: white; color: black; font-size: 20px; padding: 8px 15px; border-radius: 6px; border: none; cursor: pointer">step in Yang's shoes</button>
+                        </p>
+                    </div>
+                    <div id="chat" role="conversation" style="width: 60%; overflow: hidden; padding-bottom: 40px ">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./conversation.js"></script>
+    </body>
+</html>

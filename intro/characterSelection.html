@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../fontawesome/css/all.css"> 
+        <link rel="stylesheet" href="../index.css">
+        <link ref="stylesheet" href="character.css"
+    </head>
+    <body>
+        <div class="container" role="container">
+            <a href="./welcome.html" role="backButton">
+                <img id="leftSlide" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <a href="./yangIntro.html" role="nextButton">
+                <img id="rightSlide" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504297/rightSlide_djihdk.svg"/>
+            </a>
+            <img id="group2" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613501181/Group_67_qba47t.svg" />
+            <img id="rect" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613511158/Rectangle_111_jubjwe.svg" style="position: absolute; left: 30%; top: -4%; width: 5%"/>
+            <img id="polygon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613512838/Polygon_888_bnqyp2.svg" />
+            <img id="ellipse" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613510970/Ellipse_255_gsqail.svg" />
+            <div class="header" role="header">
+                <img style="width: 30%; z-index: 1;" alt="Perspective logo" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613231721/Perspective_title_i8bmmb.svg" />
+            </div>
+            <div class="direction" role="direction">
+                Please select the character you would like to start with.
+                <i class="fas fa-volume-up" role="speakerIcon" style="font-size: 20px; margin-bottom: 20px; cursor: pointer;" onclick="speak()"></i>
+            </div>
+            <div class="characters" role="characterHolder">
+                <div class="black-male" role="wrapper">
+                    <div class="content" role="content">
+                        <div class="title" role="title" style="margin-bottom: 10px">
+                            Black male
+                        </div>
+                        <img alt="black male image" id="characterImage" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613262123/Jevon_zb3caa.svg" />
+                        <button style="border-radius: 20px; cursor: pointer; border: none; background-color: #111F47; color: white; padding: 10px 10px; width: 25%; text-align: center; font-size: 16px; ">
+                            Jevon
+                        </button>
+                    </div>
+                </div>
+                <div class="women-in-tech" role="wrapper">
+                    <div class="content" role="content">
+                        <div class="header" role="title" style="margin-bottom: 10px">
+                            Woman in tech
+                        </div>
+                        <img alt="women in tech image" id="characterImage" alt="" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613262323/yang_oyy0oi.svg" />
+                        <button style="border-radius: 20px; cursor: pointer; border: none; background-color: #111F47; color: white; padding: 10px 10px; width: 25%; text-align: center; font-size: 16px; ">
+                            <a href="yangIntro.html" style="color: white; text-decoration: none;" >
+                            Yang
+                            </a>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="trans-gender" role="wrapper">
+                    <div class="content" role="content" style="font-family: Montserrat;  font-size: 18px;  margin-left: -100px; margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div class="header" role="title" style="margin-bottom: 10px">
+                            Transgender
+                        </div>
+                        <img alt="transgender image" id="characterImage" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613262303/elijah_xmsqid.svg" />
+                        <button style="border-radius: 20px; cursor: pointer; border: none; background-color: #111F47; color: white; padding: 10px 10px; width: 25%; text-align: center; font-size: 16px; ">
+                            Elijah
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function speak(){
+                console.log('speak function is invoked')
+                var audio = new Audio('../asset/VOfiles/PerspectivesVO_chooseacharacter.wav');
+                audio.volume = 1;
+                audio.play()
+            }
+        </script>
+    </body>
+</html>

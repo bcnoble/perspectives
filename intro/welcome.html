@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../fontawesome/css/all.css"> 
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="character.css">
+    </head>
+    <body>
+        <div class="container" role="container" style="width: 105%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Helvetica Neue; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613505104/Group_99_cjjck1.svg); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: -10px;">
+            <a href="../index.html" role="backButton">
+                <img id="leftSlide" style="z-index: 1; position: absolute; left: 5%; top: 45%; width: 7%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <a href="characterSelection.html" role="nextButton">
+                <img id="rightSlide" style="z-index: 1; position: absolute; left: 92%; top: 45%; width: 7%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504297/rightSlide_djihdk.svg"/>
+            </a>
+            <img id="polygon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613511001/Polygon_88_vc311u.svg" style="position: absolute; left: 11%; top: 70%; width: 10%"/> 
+            <img id="rect" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613511158/Rectangle_111_jubjwe.svg" style="position: absolute; left: 80%; top: 10%; width: 5%"/>
+            <img id="ellipse" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613510970/Ellipse_255_gsqail.svg" style="position: absolute; left: 85%; top: -12%; width: 10%"/>
+            <img id="group1" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613501190/Group_53_q9bacv.svg" style="position: absolute; left: 5%; top: 5%; width: 10%"/>
+            <img id="group2" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613501181/Group_67_qba47t.svg" style="position: absolute; left: 90%; top: 80%; width: 10%; transform: rotate(90deg)"/>
+            <i class="fas fa-volume-up" role="speakerIcon" style="font-size: 20px; margin-bottom: 20px; cursor: pointer;" onclick="speak()"></i>
+            <div class="header" role="header" style="width: 100%; display: flex; justify-content: center; margin-top: 20px;">
+                <img style="width: 30%; z-index: 1;" alt="Perspective logo" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613231721/Perspective_title_i8bmmb.svg" />
+            </div>
+            <div class="subtitle" role="text" style="width: 40%; margin: 40px; text-align: center; font-size: 36px; color: #1E2228">
+                Welcome to Perspectives, an interactive learning game that goes over a variety of bias in the workplace.
+            </div>
+        </div>
+        <script>
+            function speak(){
+                var audio = new Audio('../asset/VOfiles/PerspectivesVO_appoverview.wav');
+                audio.volume = 1;
+                audio.play()
+            }
+        </script>
+    </body>
+</html>

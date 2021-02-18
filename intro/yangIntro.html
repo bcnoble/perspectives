@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective 2.0</title>
+        <link rel="stylesheet" href="../fontawesome/css/all.css"> 
+        <link rel="stylesheet" href="../index.css">
+        <link ref="stylesheet" href="character.css">
+    </head>
+    <body>
+        <div class="container" role="container" style="width: 100%; height: 100vh; display: flex;  flex-direction: column; align-items: center; justify-content: center; font-family: Helvetica Neue; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613512200/Group_100_df9sqr.png); background-size: 100% 100%; background-repeat: no-repeat; margin-top: -10px;">
+            <a href="./characterSelection.html" role="backButton">
+                <img id="leftSlide" style="z-index: 1; position: absolute; left: 5%; top: 45%; width: 7%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504280/leftSlide_lhdarx.svg"/>
+            </a>
+            <a href="../office/officeWithObjects/yangOfficeWithObjects.html" role="nextButton">
+                <img id="rightSlide" style="z-index: 1; position: absolute; left: 92%; top: 45%; width: 7%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613504297/rightSlide_djihdk.svg"/>
+            </a>
+            <img id="group2" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613501181/Group_67_qba47t.svg" style="position: absolute; left: 92%; top: 80%; width: 10%; transform: rotate(80deg)"/>
+            <img id="ellipse" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613501226/Ellipse_25_npqhh5.svg" style="position: absolute; left: 85%; top: -11%; width: 10%"/>
+            <img id="polygon" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613511023/Polygon_14_iua8a8.svg" style="position: absolute; left: 15%; top: 10%; width: 5%"/>
+            <img id="ellipse" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613510970/Ellipse_255_gsqail.svg" style="position: absolute; left: -10%; top: 70%; width: 14%"/>
+            <img class="header" role="Perspective logo" style="width: 30%; margin-top: 5%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613231721/Perspective_title_i8bmmb.svg"/>
+            <i class="fas fa-volume-up" role="speakerIcon" style="font-size: 20px; margin-top: 20px; cursor: pointer;" onclick="speak()"></i>
+            <img id="yangImage" style="z-index: 1; position: absolute; left: 22%; top: 35%; width: 23%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613262323/yang_oyy0oi.svg"/>
+            <div class="wrapper" role="wrapper" style="font-family: Montserrat; margin-top: 2%; display: flex; justify-content: flex-end; background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613515299/Group_900_vqfefl.png); width: 75%; height: 100%; background-size: 90% 75%; background-position: center; background-repeat: no-repeat">
+                <div style="width: 50%; height: 50%; margin-top: 13%; margin-right: 5%; ">
+                    <div class="name" role="character" style=" display: flex; align-items: center;">
+                        <div role="text" style="font-size: 20px; width: 100px; text-align: right; margin-right: 20px;">Name</div>
+                        <img alt="charater name" style="width: 20%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613269392/Group_91_oj881v.svg" />
+                    </div>
+                    <div class="occupation" role="occupation" style="font-family: Montserrat; margin-top: 20px; display: flex; align-items: center;">
+                        <div role="title" style="font-size: 20px; width: 100px; text-align: right; margin-right: 20px">Occupation</div>
+                        <img alt="occupation name" style="width: 50%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613269768/Group_92_huwyho.svg" />
+                    </div>
+                    <div class="bias" role="biasLevel" style="font-family: Montserrat; margin-top: 20px; display: flex; align-items: center;">
+                        <div role="title" style="font-size: 20px; width: 100px; text-align: right; margin-right: 20px">Bias</div>
+                        <img alt="bias level" style="width: 30%" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1613269837/bias_o4vpmx.svg" />
+                    </div>
+                    <div class="" role="characterBiography" style="font-family: Montserrat; margin-top: 20px; display: flex; align-items: center;">
+                        <div style="width: 100px; text-align: right; margin-right: 20px"></div>
+                        <div role="characterIntroduction" style="font-size: 18px; background-color: #DCEBEB; width: 55%; color: black; padding: 5px 20px ">
+                            <p>
+                                She constantly deals with bias at the workplace due to her gender. 
+                            </p>
+                            <p>
+                                In meetings, she is always asked to take notes even though there is a project manager and is scrutinized in her presentations compared to her male counterparts.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function speak(){
+                console.log('speak function is invoked')
+                var audio = new Audio('../asset/VOfiles/PerspectivesVO_yangoverview.wav');
+                audio.volume = 1;
+                audio.play()
+            }
+        </script>
+    </body>
+</html>
