@@ -1,102 +1,167 @@
-.container {
-    width: 105%; height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    font-family: Helvetica Neue; 
-    background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613512200/Group_100_df9sqr.png); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    margin-top: -10px;
-}
-#leftSlide {
-    z-index: 1; 
-    position: absolute; 
-    left: 5%; 
-    top: 45%; 
-    width: 7%"
-}
-#rightSlide {
-    z-index: 1; 
-    position: absolute; 
-    left: 95%; 
-    top: 45%; 
-    width: 7%
-}
-#group2 {
-    position: absolute; 
-    left: -5%; 
-    top: 15%; 
-    width: 10%; 
-    transform: rotate(240deg)
-}
-#polygon {
-    position: absolute; 
-    left: 75%; 
-    top: 10%; 
-    width: 5%
-}
-#ellipse {
-    position: absolute; 
-    left: 97%; 
-    top: 20%; 
-    width: 10%
-}
-.header {
-    margin-top: -20px; 
-    width: 100%; 
-    display: flex; 
-    justify-content: center;
-}
-.direction {
-    width: 40%; 
-    margin: 40px; 
-    text-align: center; 
-    font-size: 36px; 
-    color: #1E2228;
-}
-.characters {
-    margin-top: 30px; 
-    display: flex; 
-    justify-content: space-between; 
-    margin-left: 10%;  
-    width: 75%; 
-    height: 40vh; 
-}
-.black-male {
-    width: 400px; 
-    height: 380px; 
-    background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248115/bm_esew1h.png); 
-    background-size: 100% 100%; 
-    background-repeat: no-repeat;
-}
-.content {
-    font-family: Montserrat;  
-    font-size: 18px;  
-    margin-left: -100px; 
-    margin-top: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-}
-#characterImage {
-    width: 180px; 
-    height: 230px; 
-    margin: 10px 0 15px 0;
-}
-.women-in-tech {
-    width: 400px; 
-    height: 380px; 
-    background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248186/wit_aedbqc.png); 
-    background-size: 74% 100%; 
-    background-repeat: no-repeat;
-}
-.trans-gender {
-    width: 400px; 
-    height: 380px; 
-    background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248128/trans_nae3tj.png); 
-    background-size: 100% 100%; 
-    background-repeat: no-repeat;
-}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .container {
+        width: 105%; height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        font-family: Helvetica Neue; 
+        background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613512200/Group_100_df9sqr.png); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        margin-top: -10px;
+    }
+    #leftSlide {
+        z-index: 1; 
+        position: absolute; 
+        left: 5%; 
+        top: 45%; 
+        width: 7%"
+    }
+    #rightSlide {
+        z-index: 1; 
+        position: absolute; 
+        left: 95%; 
+        top: 45%; 
+        width: 7%
+    }
+    #group2 {
+        position: absolute; 
+        left: -5%; 
+        top: 15%; 
+        width: 10%; 
+        transform: rotate(240deg)
+    }
+    #polygon {
+        position: absolute; 
+        left: 75%; 
+        top: 10%; 
+        width: 5%
+    }
+    #ellipse {
+        position: absolute; 
+        left: 97%; 
+        top: 20%; 
+        width: 10%
+    }
+    .header {
+        margin-top: -20px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+    .direction {
+        width: 40%; 
+        margin: 40px; 
+        text-align: center; 
+        font-size: 36px; 
+        color: #1E2228;
+    }
+    .characters {
+        margin-top: 30px; 
+        display: flex; 
+        justify-content: space-between; 
+        margin-left: 10%;  
+        width: 75%; 
+        height: 40vh; 
+    }
+    .black-male {
+        width: 400px; 
+        height: 380px; 
+        background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248115/bm_esew1h.png); 
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+    }
+    .content {
+        font-family: Montserrat;  
+        font-size: 18px;  
+        margin-left: -100px; 
+        margin-top: 20px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+    #characterImage {
+        width: 180px; 
+        height: 230px; 
+        margin: 10px 0 15px 0;
+    }
+    .women-in-tech {
+        width: 400px; 
+        height: 380px; 
+        background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248186/wit_aedbqc.png); 
+        background-size: 74% 100%; 
+        background-repeat: no-repeat;
+    }
+    .trans-gender {
+        width: 400px; 
+        height: 380px; 
+        background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248128/trans_nae3tj.png); 
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+    }
+    
+  }
+  
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    /* CSS */
+    
+  }
+
+ /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    
+  }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    /* CSS */
+    
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    /* CSS */
+    
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    
+  }
+  
