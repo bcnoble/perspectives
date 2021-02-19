@@ -93,3 +93,10 @@
     background-size: 74% 100%; 
     background-repeat: no-repeat;
 }
+.trans-gender {
+    width: 400px; 
+    height: 380px; 
+    background-image: url(https://res.cloudinary.com/dfulxq7so/image/upload/v1613248128/trans_nae3tj.png); 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}

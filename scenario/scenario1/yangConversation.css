@@ -1,0 +1,9 @@
+.conversation-container {
+    display: flex; font-family: Montserrat;
+}
+#left-Slide {
+    z-index: 1; width: 40%; 
+}
+.office-setup {
+    width: 100%; height: 100vh;
+}
